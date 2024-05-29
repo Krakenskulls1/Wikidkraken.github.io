@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlqmeDev</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>FlqmeDevMC - Elevate Minecraft Gameplay</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="plugin-development.html">Plugin Development</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="support.html">Support</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="home">
-    <div class="container">
-        <h1>Welcome to FlqmeDev</h1>
-        <p>Your one-stop solution for Minecraft development services.</p>
-        <a href="#about" class="btn">Learn More</a>
-    </div>
-</section>
-    
+    <main class="main-content">
+        <section class="hero">
+            <h1>FlqmeDevMC</h1>
+            <p>Elevate Minecraft Gameplay: Crafting Better Clients Together!</p>
+            <button class="download-button">Learn More!</button>
+        </section>
+    </main>
     <footer>
-        &copy; 2024 FlqmeDev. All rights reserved.
+        <p>&copy; <span id="copyright"></span> FlqmeDev</p>
     </footer>
-
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script>
+        // Update copyright year
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyright').textContent = currentYear;
+    </script>
 </body>
 </html>
