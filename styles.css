@@ -1,20 +1,33 @@
 /* styles.css */
 
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden; /* Hide scroll bars */
+}
+
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -29,17 +42,40 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #ff0000; /* Red color on hover */
+}
+
+/* Section Styles */
 section {
-    padding: 50px;
+    padding: 100px;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 h1, h2 {
-    color: #333;
+    color: #fff;
 }
 
+/* Service and Project Styles */
+.service, .project {
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover, .project:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.service h3, .project h3 {
+    color: #ff0000; /* Red color for headings */
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -51,10 +87,43 @@ footer {
 }
 
 /* Additional Styles */
-.service {
-    margin-bottom: 50px;
+#home {
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
 }
 
-.project {
-    margin-bottom: 50px;
+#home h1 {
+    font-size: 48px;
 }
+
+#home p {
+    font-size: 24px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #ff0000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #fff;
+}
+
