@@ -1,1 +1,37 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eaglercraft Clients</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="hero">
+            <h1>Eaglercraft Clients</h1>
+            <p>Are in the Downloads tab!</p>
+            <button class="download-button">Learn More!</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Wikidkraken</p>
+    </footer>
+    <script>
+        // Update copyright year
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyright').textContent = currentYear;
+    </script>
+</body>
+</html>
